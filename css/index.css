@@ -1,1 +1,401 @@
+.clearfix::before{
+	content: '';
+	display: table;
+}
+.pageone{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: url('../images/background.jpg') no-repeat;
+	background-size: cover;
+	z-index: 3;
+}
+.myinfo{
+	width: 502px;
+	height: 502px;
+	border-radius: 257px;
+	border: 6px solid red;
+	box-shadow: 0 0 20px 10px darkred;
+	margin: 100px auto 0;
+	position: relative;
+	animation: myinfomove 8s linear infinite;
+	overflow: hidden;
+}
+.myinfo:hover{
+	animation-play-state: paused;
+	cursor: pointer;
+}
+.myinfo_name,.myinfo_sex,.myinfo_like,.myinfo_instro,.myinfo_site,.myinfo_call{
+	font-weight: bold;
+	font-size: 25px;
+	position: absolute;
+	color: lightgoldenrodyellow;
+}
+.myinfo_name{
+	top: 70px;
+	left: 120px;
+	transform: rotateZ(-30deg);
+}
+.myinfo_sex{
+	top: 75px;
+	left: 310px;
+	transform: rotateZ(30deg);
+}
+.myinfo_like{
+	top: 235px;
+	left: 390px;
+	transform: rotateZ(90deg);
+}
+.myinfo_instro{
+	top: 395px;
+	left: 280px;
+	transform: rotateZ(150deg);
+}
+.myinfo_site{
+	top: 395px;
+	left: 110px;
+	transform: rotateZ(210deg);
+}
+.myinfo_call{
+	top: 240px;
+	left: 15px;
+	transform: rotateZ(-90deg);
+}
+.myinfo_name_detail,.myinfo_sex_detail,.myinfo_like_detail,.myinfo_instro_detail,.myinfo_site_detail,.myinfo_call_detail{
+	width: 250px;
+	height: 150px;
+	border: 2px solid lightyellow;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: grey;
+	border-radius: 10px;
+}
+.myinfo_content{
+	font-weight: normal;
+	font-size: 18px;
+	margin-top:40px;
+	color: lightgoldenrodyellow;
+	display: none;
+}
+.myinfo_name_detail{
+	position: absolute;
+	top: 40px;
+	left: 13%;
+}
+.myinfo_sex_detail{
+	position: absolute;
+	top: 290px;
+	left: 5%;
+}
+.myinfo_like_detail{
+	position: absolute;
+	top: 520px;
+	left: 13%;
+}
+.myinfo_instro_detail{
+	position: absolute;
+	top: 40px;
+	left: 70%;
+}
+.myinfo_site_detail{
+	position: absolute;
+	top: 290px;
+	left: 78%;
+}
+.myinfo_call_detail{
+	position: absolute;
+	top: 520px;
+	left: 70%;
+}
+.myinfo_line1,.myinfo_line2,.myinfo_line3{
+	width: 2px;
+	height: 504px;
+	background-color: red;
+	box-shadow: 0 0 4px 2px darkred;
+	left: 50%;
+	position: absolute;
+}
+.myinfo_line2{
+	transform: rotateZ(60deg);
+}
+.myinfo_line3{
+	transform: rotateZ(120deg);
+}
+.myinfo_name_line,.myinfo_sex_line,.myinfo_like_line,.myinfo_instro_line,.myinfo_site_line,.myinfo_call_line{
+	position: absolute;
+	background-color: lightyellow;
+}
+.myinfo_name_line{
+	top: 130px;
+	left: 450px;
+	width: 160px;
+	height: 2px;
+	transform: rotateZ(20deg);
+}
+.myinfo_sex_line{
+	top: 368px;
+	left: 330px;
+	width: 179px;
+	height: 2px;
+}
+.myinfo_like_line{
+	top: 580px;
+	left: 450px;
+	width: 156px;
+	height: 2px;
+	transform: rotateZ(-20deg);
+}
+.myinfo_instro_line{
+	top: 130px;
+	right: 455px;
+	width: 152px;
+	height: 2px;
+	transform: rotateZ(-20deg);
+}
+.myinfo_site_line{
+	top: 368px;
+	right: 338px;
+	width: 173px;
+	height: 2px;
+}
+.myinfo_call_line{
+	top: 580px;
+	right: 455px;
+	width: 152px;
+	height: 2px;
+	transform: rotateZ(20deg);
+}
+.myinfocenter{
+	width: 250px;
+	height: 250px;
+	background: url('../images/tx.jpeg') no-repeat center center darkred;
+	background-size: cover;
+	border: 4px solid red;
+	border-radius: 127px;
+	top: 225px;
+	left: 50%;
+	margin-left: -125px;
+	position: absolute;
+	text-align: center;
+	line-height: 250px;
+	font-size: 35px;
+	font-weight: bold;
+	color: darkred;
+}
+.myinfo_border_style{
+	box-shadow: 0 0 8px 3px darkred;
+	border-color: red;
+	background-color: darkred;
+	opacity: 0.8;
+}
+.myinfo_line_style{
+	background-color: red;
+	box-shadow: 0 0 8px 3px darkred;
+}
+/*转动animation动画*/
+@keyframes myinfomove{
+	from{
+		transform: rotateZ(0deg)
+	}
+	to{
+		transform: rotateZ(360deg)
+	}
+}
+/*灯光动画*/
+@keyframes worksmove{
+	0%{
+		opacity: 0.2;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0.2;
+	}
+}
+.pagetwo{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: url('../images/background.jpg') no-repeat;
+	background-size: cover;
+	z-index: 2;
+}
+.pagethree{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: url('../images/background.jpg') no-repeat;
+	background-size: cover;
+	z-index: 1;
+}
+.works_title{
+	width: 600px;
+	height: 120px;
+	margin: 30px auto 0;
+}
+.works_title_name{
+	width: 400px;
+	height: 50px;
+	text-align: center;
+	margin: 10px auto 0;
+	border: 2px solid red;
+	border-radius: 27px;
+	background-color: darkred;
+	box-shadow: 0 0 10px 5px darkred;
+}
+.works_title_name h1{
+	margin: 0;
+	font-size: 35px;
+	color: lightgoldenrodyellow;
+}
+.works_title_light{
+	width: 500px;
+	height: 40px;
+	margin: 5px auto 0;
+}
+.works_title_light div{
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	background-color: red;
+	float: left;
+	margin: 10px 21px 0;
+	box-shadow: 0 0 10px 5px darkred;
+	animation: worksmove 3s linear infinite;
+}
+.works_content{
+	width: 1200px;
+	height: 450px;
+	margin: 40px auto 0;
+}
+.works_content_1,.works_content_2,.works_content_3,.works_content_4{
+	width: 260px;
+	height: 290px;
+	float: left;
+	padding: 20px;
+}
+.works_pc_btn1,.works_pc_btn2,.works_pc_btn3{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: red;
+	outline: none;
+	font-weight: bold;
+	position: absolute;
+	top: 7px;
+	right: 7px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 19px;
+	padding: 0;
+}
+.checkimg{
+	position: absolute;
+	top: 30px;
+	display: none;
+	text-align: center;
+	margin-left: 70px;
+}
+.checkimg img{
+	width: auto;
+	height: 700px;
+}
+.works_img_1{
+	background: url('../images/works-pc.jpg') center center no-repeat;
+	background-size: cover;
+}
+.works_img_2{
+	background: url('../images/works-yd.jpg') center center no-repeat;
+	background-size: cover;
+}
+.works_img_3{
+	background: url('../images/works-wx.jpg') center center no-repeat;
+	background-size: cover;
+}
+.works_img_4{
+	background: url('../images/works-vue.png') center center no-repeat;
+	background-size: cover;
+}
+.works_img_1,.works_img_2,.works_img_3,.works_img_4{
+	width: 260px;
+	height: 240px;
+	border-radius: 10px;
+	border: 3px solid lightyellow;
+}
+.btn_img_1,.btn_img_2,.btn_img_3,.btn_img_4{
+	width: 180px;
+	height: 30px;
+	border-radius: 15px;
+	background-color: red;
+	margin: 25px 40px 0;
+	outline: none;
+}
+.works_pc,.works_yd,.works_wx{
+	position: absolute;
+	width: 1000px;
+	height: 600px;
+	background: url('../images/background.jpg') center center no-repeat;
+	background-size: cover;
+	overflow: auto;
+	top: 50px;
+	left: 270px;
+	border: 2px solid lightyellow;
+	border-radius: 10px;
+	padding: 10px;
+	display: none;
+}
+.works_pc_1{
+	width: 950px;
+	height: 280px;
+	overflow-y: auto;
+	margin: 15px auto 0;
+	border: 1px solid grey;
+}
+.works_pc_1 img{
+	width: auto;
+	height: 280px;
+	float: left;
+	margin-right: 6px;
+	margin-left: 6px;
+}
+.works_pc_1 li{
+	width: 30px;
+	height: 180px;
+	float: left;
+	background-color: #fff;
+	list-style: none;
+	text-align: center;
+	line-height: 24px;
+	padding-top: 100px;
+}
 
+
+.change1{
+	position: fixed;
+	z-index: 4;
+	top: 90%;
+	left: 52%;
+}
+.change2{
+	position: fixed;
+	z-index: 4;
+	top: 90%;
+	left: 44%;
+}
+.change1 button,.change2 button{
+	background-color: red;
+	box-shadow: 0 0 5px 5px darkred;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	font-weight: bold;
+}
