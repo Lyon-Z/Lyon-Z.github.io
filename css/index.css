@@ -1,3 +1,6 @@
+li{
+	list-style: none;
+}
 .clearfix::before{
 	content: '';
 	display: table;
@@ -377,6 +380,224 @@
 	padding-top: 100px;
 }
 
+.technology{
+	width: 1200px;
+	height: 650px;
+	margin: 50px auto 0;
+}
+.technology_body{
+	width: 1100px;
+	height: 550px;
+	margin: 30px auto 0;
+}
+.technology_body_1{
+	width: 400px;
+	height: 400px;
+	float: left;
+	margin-top: 75px;
+	padding-top: 20px;
+}
+.technology_body_2{
+	width: 300px;
+	height: 300px;
+	float: left;
+	margin-top: 125px;
+	border-radius: 150px;
+	position: relative;
+}
+.technology_body_3{
+	width: 400px;
+	height: 400px;
+	float: right;
+	margin-top: 75px;
+	padding-top: 20px;
+}
+.technology_body_1 li,.technology_body_3 li{
+	float: left;
+}
+.techone{
+	position: absolute;
+	width: 125px;
+	height: 250px;
+	background-color: cyan;
+	border-radius: 0 125px 125px 0;
+	margin: 25px 0 0 150px;
+	animation: techmove_right 4s linear infinite;
+	transform-origin: left center;
+	box-shadow: 0 0 5px 2px darkred;
+}
+.techtwo{
+	position: absolute;
+	width: 100px;
+	height: 200px;
+	background-color: blue;
+	border-radius: 100px 0 0 100px;
+	margin: 50px 0 0 50px;
+	animation: techmove_left 3s linear infinite;
+	transform-origin: right center;
+	box-shadow: 0 0 5px 2px darkred;
+}
+.techthree{
+	position: absolute;
+	width: 75px;
+	height: 150px;
+	background-color: gold;
+	border-radius: 0 75px 75px 0;
+	margin: 75px 0 0 150px;
+	animation: techmove_right 2s linear infinite;
+	transform-origin: left center;
+	box-shadow: 0 0 5px 2px darkred;
+}
+.techfour{
+	position: absolute;
+	width: 50px;
+	height: 100px;
+	background-color: #fff;
+	border-radius: 50px 0 0 50px;
+	margin: 100px 0 0 100px;
+	animation: techmove_left 1s linear infinite;
+	transform-origin: right center;
+	box-shadow: 0 0 5px 2px darkred;
+}
+.techfive{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	margin: 125px 0 0 125px;
+	box-shadow: 0 0 5px 2px darkred;
+	animation: techmove_light 5s linear infinite;
+}
+@keyframes techmove_right{
+	from{
+		transform: rotateZ(0deg);
+	}
+	to{
+		transform: rotateZ(-360deg);
+	}
+}
+@keyframes techmove_left{
+	from{
+		transform: rotateZ(0deg);
+	}
+	to{
+		transform: rotateZ(360deg);
+	}
+}
+@keyframes techmove_light{
+	0%{
+		background-color: red; 
+	}
+	20%{
+		background-color: yellow;
+	}
+	40%{
+		background-color: green;
+	}
+	60%{
+		background-color: blue;
+	}
+	80%{
+		background-color: cyan;
+	}
+	100%{
+		background-color: red;
+	}
+}
+.body_html,.body_css,.body_js,.body_jquery,.body_bs,.body_vue,.body_less,.body_git,.body_ps,.body_wx{
+	width: 400px;
+	height: 36px;
+	border-radius: 18px;
+	background-color: red;
+	margin-top: 30px;
+}
+.body_html{
+	margin-left: 50px;
+}
+.body_css{
+	margin-left: 5px;
+}
+.body_js{
+	margin-left: -7px;
+}
+.body_jquery{
+	margin-left: 5px;
+}
+.body_bs{
+	margin-left: 50px;
+}
+.body_vue{
+	margin-left: -50px;
+}
+.body_less{
+	margin-left: -5px;
+}
+.body_git{
+	margin-left: 7px;
+}
+.body_ps{
+	margin-left: -5px;
+}
+.body_wx{
+	margin-left: -50px;
+}
+.body_html li:nth-child(1),.body_css li:nth-child(1),.body_js li:nth-child(1),.body_jquery li:nth-child(1),.body_bs li:nth-child(1),.body_vue li:nth-child(2),.body_less li:nth-child(2),.body_git li:nth-child(2),.body_ps li:nth-child(2),.body_wx li:nth-child(2){
+	color: #fff;
+	width: 90px;
+	height: 36px;
+	border-radius: 18px;
+	background-color: grey;
+	line-height: 36px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+}
+.body_html li:nth-child(2),.body_css li:nth-child(2),.body_js li:nth-child(2),.body_jquery li:nth-child(2),.body_bs li:nth-child(2){
+	height: 36px;
+	border-radius: 0 18px 18px 0;
+	background-color: #f1f1f1;
+	opacity: 0.7;
+	float: right;
+}
+.body_html li:nth-child(2){
+	width: 90px;
+}
+.body_css li:nth-child(2){
+	width: 90px;
+}
+.body_js li:nth-child(2){
+	width: 110px;
+}
+.body_jquery li:nth-child(2){
+	width: 130px;
+}
+.body_bs li:nth-child(2){
+	width: 130px;
+}
+.body_vue li:nth-child(2),.body_less li:nth-child(2),.body_git li:nth-child(2),.body_ps li:nth-child(2),.body_wx li:nth-child(2){
+	float: right;
+}
+.body_vue li:nth-child(1),.body_less li:nth-child(1),.body_git li:nth-child(1),.body_ps li:nth-child(1),.body_wx li:nth-child(1){
+	height: 36px;
+	border-radius: 18px 0 0 18px;
+	background-color: #f1f1f1;
+	opacity: 0.7;
+}
+.body_vue li:nth-child(1){
+	width: 170px;
+}
+.body_less li:nth-child(1){
+	width: 130px;
+}
+.body_git li:nth-child(1){
+	width: 130px;
+}
+.body_ps li:nth-child(1){
+	width: 150px;
+}
+.body_wx li:nth-child(1){
+	width: 90px;
+}
 
 .change1{
 	position: fixed;
